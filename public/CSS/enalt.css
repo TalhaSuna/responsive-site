@@ -1,0 +1,87 @@
+.enalt{
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+.enalt .kart{
+    height: 500px;
+    width: 300px;    
+}
+ .enalt .kart{
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid gray;
+    background-size: cover; 
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 300px;
+ }
+ .enalt .kart::after {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;    
+    bottom: 0;
+    left: 0;
+}
+
+.enalt .kart .yazilar {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2; 
+}
+
+.enalt .kart .yazilar h1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.enalt .kart .yazilar h2 {
+    font-weight: normal;
+    font-size: 16px;
+    opacity: 0.8; 
+}
+.enalt .kart .son{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    color: black;
+    left: 50%;
+    top: 70%;
+}
+@media screen and (max-width: 1250px) {
+    .enalt .kart {
+        height: 450px;
+        width: 250px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .enalt {
+        flex-direction: column; 
+        align-items: center; 
+        display: flex;
+        gap: 20px; 
+    }
+
+    .enalt .kart {
+        height: 400px; 
+        width: 80%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .enalt .kart {
+        height: 350px;
+        width: 95%; 
+    }
+}

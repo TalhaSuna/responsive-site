@@ -1,0 +1,67 @@
+.middle{
+    margin: 105px 0 0 147px;
+}
+.middle h1{
+    font-family: "Barriecito", serif;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-size: 100px;
+    font-weight: 400;
+}
+.middle h3{
+    font-family: "Barriecito", serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 400;
+}
+.middle img{
+    width: 373px;
+    height: 68px;
+}
+@media screen and (max-width: 1260px) {
+    .middle {
+        margin: 50px 0 0 50px; 
+    }
+    .middle h1 {
+        font-size: 60px; 
+    }
+    .middle h3 {
+        font-size: 20px; 
+    }
+    .middle img {
+        width: 250px; 
+        height: auto; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .middle {
+        margin: 30px 0 0 20px; 
+    }
+    .middle h1 {
+        font-size: 40px; 
+    }
+    .middle h3 {
+        font-size: 18px;
+    }
+    .middle img {
+        width: 200px; 
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .middle {
+        margin: 20px 0 0 10px; 
+    }
+    .middle h1 {
+        font-size: 30px; 
+    }
+    .middle h3 {
+        font-size: 16px; 
+    }
+    .middle img {
+        width: 150px; 
+        height: auto; 
+    }
+}

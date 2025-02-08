@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="endis">
+        <div class="topbar">
+            <div class="marka">Tripo Games</div>
+             <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menu">
+                <ul class="liste">
+                    <li class="kırmızı">Ana sayfa</li>
+                    <li>Oyunlar</li>
+                    <li>Kariyer</li>
+                    <li>Hakıkında</li>
+                    <li>İletişim</li>
+                </ul>
+            </div>           
+        </div>
+        <section class="middle">
+            <h1>Oyun Keyfiniz...</h1>
+            <h3>Mobil Oyunda Bir Numara</h3>
+            <img src="public/images/f56cbae9-e83b-4b83-9a95-71a78334ee66-cover.png" alt="">
+        </section>
+        <div class="enalt">
+            <div class="kart bir" style="background-image: url('public/images/kart1.jpg');">
+                <div class="yazilar">
+                    <h1>Ghost Recon</h1>
+                    <h2>Gündelik - Ücretsiz</h2>
+                </div>
+            </div>
+            <div class="kart iki" style="background-image: url('public/images/kart3.jpg');">
+                <div class="yazilar">
+                    <h1>Asassin's Creed</h1>
+                    <h2>RPG - Ücretsiz</h2>
+                </div>
+            </div>
+            <div class="kart uc" style="background-image: url('public/images/kart2.jpg');">
+            </div>
+            <div class="kart dort" style="background-image: url('public/images/kart4.jpg');">
+                <div class="son">
+                    <h1>Oyunlarımızı Keşfedin</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector(".menu");
+            if (menu.classList.contains("aktif")) {
+                menu.classList.remove("aktif");
+                setTimeout(() => menu.style.display = "none");
+            } else {
+                menu.style.display = "flex";
+                setTimeout(() => menu.classList.add("aktif"));
+            }
+        }
+    </script>
+</body>
+</html>
