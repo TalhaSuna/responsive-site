@@ -35,7 +35,23 @@
         <section class="middle">
             <h1>Oyun Keyfiniz...</h1>
             <h3>Mobil Oyunda Bir Numara</h3>
-            <img src="public/images/f56cbae9-e83b-4b83-9a95-71a78334ee66-cover.png" alt="">
+
+            <div class="market">
+                <div class="uygulama">
+                    <img src="public/images/apple.jpg" alt="">
+                    <div class="yazi">
+                        <p>Download on the</p>
+                        <h4>APP STORE</h4>
+                    </div>
+                </div>
+                <div class="uygulama">
+                    <img src="public/images/googleplay.jpg" alt="" >
+                    <div class="yazi">
+                        <p>Get It on</p>
+                        <h4>Google Play</h4>
+                    </div>
+                </div>
+            </div>
         </section>
         <div class="enalt">
             <div class="kart bir" style="background-image: url('public/images/kart1.jpg');">
@@ -61,15 +77,29 @@
     </div>
     <script>
         function toggleMenu() {
-            let menu = document.querySelector(".menu");
-            if (menu.classList.contains("aktif")) {
-                menu.classList.remove("aktif");
-                setTimeout(() => menu.style.display = "none");
-            } else {
-                menu.style.display = "flex";
-                setTimeout(() => menu.classList.add("aktif"));
-            }
+    let menu = document.querySelector(".menu");
+    if (window.innerWidth <= 1260) {
+        if (menu.classList.contains("aktif")) {
+            menu.classList.remove("aktif");
+            setTimeout(() => menu.style.display = "none", 300);
+        } else {
+            menu.style.display = "flex";
+            setTimeout(() => menu.classList.add("aktif"), 10);
         }
+    }
+}
+
+window.addEventListener('resize', function() {
+    let menu = document.querySelector(".menu");
+    if (window.innerWidth > 1260) {
+        menu.classList.remove("aktif");
+        menu.style.display = "flex";
+        menu.style.flexDirection = "row";  
+    } else {
+        menu.style.display = "none";
+        menu.style.flexDirection = "column";  
+    }
+});
     </script>
 </body>
 </html>
